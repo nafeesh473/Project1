@@ -12,53 +12,58 @@ import Serve2 from './componants/Serve2';
 function App() {
   return (
     <>
-      <div className='row'>
-        <div className='col-lg'>
+      <div className="container-fluid p-0">
 
-      <Navbar/>
-        </div>
-        <br/>
+{/* Navbar - No need for column here */}
 
-    <div className='bg-dark text-light'>
+<Navbar />
 
-    <Header/>
-    
-        <div className='col-lg'>
-        <br/>
-    <Product/>
-        </div>
-  
-        <br/>
-        <div className='col-lg'>
-    <About/>
-        </div>
-        <br/>
-        <br/>
-    
-        <div className='col-lg'>
-    
-    <Technology/>
-        </div>
-        <br/>
-        <div className='col-lg'>
-    
-    <Serve/>
-        </div>
-        <br/>
-        <div className='col-lg'>
-   
-    <Serve2/>
-        </div>
-        <br/>
- 
-    <hr/>
-        <div className='col-lg'>
-  
-    <Contact/>
-        </div>
-    
-    </div>
-    </div>
+
+{/* Main Content */}
+<div className="bg-dark text-light">
+
+  {/* Header Section */}
+  <section className="">
+    <Header />
+  </section>
+
+  {/* Product Section */}
+  <section className="py-5">
+    <Product />
+  </section>
+
+  {/* About Section */}
+  <section className="py-5">
+    <About />
+  </section>
+
+  {/* Technology Section */}
+  <section className="py-5">
+    <Technology />
+  </section>
+
+  {/* Serve Section */}
+  <section className="py-5">
+    <Serve />
+  </section>
+
+  {/* Serve2 Section */}
+  <section className="py-5">
+    <Serve2 />
+  </section>
+
+  {/* Divider */}
+  <hr className="my-5" />
+
+  {/* Contact Section */}
+  <section className="py-5">
+  <h1 className='text-center'>Contect</h1>
+    <Contact />
+  </section>
+
+</div>
+</div>
+
 
     </>
   
